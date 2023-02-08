@@ -2,7 +2,7 @@
   <div>
     <%= form.label :name %><br>
     <%= form.text_field :name %>
-    <% kitten.errors.full_messages_for(:title).each do |message| %>
+    <% kitten.errors.full_messages_for(:name).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
@@ -10,7 +10,7 @@
   <div>
     <%= form.label :age %><br>
     <%= form.text_field :age %><br>
-    <% kitten.errors.full_messages_for(:body).each do |message| %>
+    <% kitten.errors.full_messages_for(:age).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
